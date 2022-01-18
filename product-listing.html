@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa</title>
+    <!-- Bootstrap link Starts -->
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css.map">
+    <!-- Bootstrap link Ends -->
+    <!-- Font Awesome Link Starts -->
+    <link rel="stylesheet" href="frontend/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Link Ends -->
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="frontend/assets/slick/slick.css">
+    <link rel="stylesheet" href="frontend/assets/slick/slick-theme.css">
+    <!-- Slick Css Ends-->
+    <!-- Custom Links -->
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Vidaloka&display=swap" rel="stylesheet">
+    <!-- Font Link Ends -->
+    <link rel="stylesheet" href="https://k1ngzed.com/dist/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="https://k1ngzed.com/dist/EasyZoom/easyzoom.css" />
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
+    <link rel="stylesheet" href="frontend/assets/css/style2.css">
+    <link rel="stylesheet" href="frontend/assets/css/responsive.css">
+    <!-- Custom Links Ends -->
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <!-- Whole Body Wrapper Starts -->
+    <section id="product-listing-page">
+        <!-- Product Listing -->
+        <section id="product-listing-wrapper" class="py-5">
+            <div class="container">
+                <div class="product-lists">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-12">
+                            <div class="left-side-wrapper px-4 py-4 d-lg-block d-none">
+                                <div class="row">
+                                    <!-- Content -->
+                                    <div class="col-12">
+                                        <div class="card-wrapper mb-2">
+                                            <div class="card-group-item">
+                                                <div class="card-head">
+                                                    <div class="heading d-flex align-items-center text-center flex-wrap">
+                                                        <div class="head">
+                                                            <h6 class="text-capitalize m-0">Choose Color</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors_block px-3 py-2">
+                                                    <label class="color_single"><small class="round"></small>
+                                                        <span class=""> Red</span>
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <small class="round bg-warning"></small>
+                                                        <span> Yellow</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <small class="round bg-primary"></small>
+                                                        <span>Blue</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <small class="round bg-success"></small>
+                                                        <span> Green</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- card-group-item.// -->
+                                        </div>
+                                    </div>
+                                    <!-- Content Ends -->
+                                    <!-- Content -->
+                                    <div class="col-12">
+                                        <div class="card-wrapper mb-2">
+                                            <div class="card-group-item">
+                                                <div class="card-head">
+                                                    <div class="heading d-flex align-items-center text-center flex-wrap">
+                                                        <div class="head">
+                                                            <h6 class="text-capitalize m-0">Choose Size</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors_block px-3 py-2">
+                                                    <label class="color_single"><span> Small</span>
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <span> Medium</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <span>Large</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <span> XL</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="color_single">
+                                                        <span> XXL</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- card-group-item.// -->
+                                        </div>
+                                    </div>
+                                    <!-- Content Ends -->
+                                    <!-- Content -->
+                                    <div class="col-12">
+                                        <div class="card-wrapper mb-2">
+                                            <div class="card-group-item">
+                                                <div class="card-head">
+                                                    <div class="heading d-flex align-items-center text-center flex-wrap">
+                                                        <div class="head">
+                                                            <h6 class="text-capitalize m-0">Choose Category</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-content1">
+                                                    <div class="card-body px-3 py-2">
+                                                        <ul class="mb-0">
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1 active">Nepal Origin</a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1 ">Cheese Luke</a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1 ">Local Made</a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1">Mozzrilla Special</a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1 ">Ghee Cheese</a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item">
+                                                                    <a href="" class="category-item py-1 ">Denver Origin</a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collapse" id="expand1">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- card-body.// -->
+                                                </div>
+                                                <div class="expand text-center">
+                                                    <a data-toggle="collapse" href="#expand1" role="button" aria-expanded="false" aria-controls="expand1" class="collapsed">View more</a>
+                                                </div>
+                                            </div>
+                                            <!-- card-group-item.// -->
+                                        </div>
+                                    </div>
+                                    <!-- Content Ends -->
+                                </div>
+                            </div>
+                            <!-- Mobile Filter  -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="effect d-xl-none d-lg-none d-md-block mb-4" data-toggle="modal" data-target="#leftsidebarfilter">
+                                            Product Filter
+                                             <span class="ml-2">
+                                                 <i class="fa fa-list" aria-hidden="true"></i>
+                                                </span>
+                                </button>
+                            <!-- Mobile Filter Ends -->
+                        </div>
+                        <div class="col-9">
+                            <ul class="show-filter d-flex justify-content-between align-items-center">
+                                <li class="px-0 py-2">
+                                    Showing all products
+                                </li>
+                                <li class="px-0 py-2 d-flex align-items-center">
+                                    <select class="form-control mx-2">
+                                        <option selected="">Choose a Filter</option>
+                                        <option>Alphabetically</option>
+                                        <option>Price High to Low</option>
+                                        <option>Recently Added</option>
+                                        <option>MOstly Purchased</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <div class="row right-side-wrapper">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Watch</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/WirelessSound-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Phones</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/Ultrabooks-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Accesories</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/heade1-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item g-4">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Laptop</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/redmi-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Headphone</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/watch-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Iphone</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/GoldPhone-1-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Laptop</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/gamecabin-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item g-4">
+                                        <div class="product-grid-item">
+                                            <div class="category-title">
+                                                <div class="category">
+                                                    <a class="m-0">Computer</a>
+                                                </div>
+                                                <h6 class="title">
+                                                    <a href="#" class="">Grana Padano </a>
+                                                </h6>
+                                            </div>
+                                            <div class="product-grid-image">
+                                                <a href="#">
+                                                    <img class="pic-1" src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/macpro-300x300.png">
+                                                </a>
+                                                <span class="product-discount-label">-20%</span>
+                                            </div>
+                                            <div class="price-cart text-center pt-2">
+                                                <div class="price d-flex align-items-center">
+                                                    <h6 class="m-0 gray">Rs 1000</h6>
+                                                    <span>£ 10.00</span>
+                                                </div>
+                                                <a class="all-deals ico effect" href="" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i
+                                                        class="fa fa-shopping-cart icon"></i> </a>
+                                            </div>
+                                            <div class="cart-compare">
+                                                <a class="all-deals effect gray" href=""><i class="fa fa-heart icon mr-2"></i>Wishlist </a>
+                                                <a class="all-deals effect gray" href=""> <i class="fa fa-exchange icon mr-2"></i>Compare </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Listing Ends -->
+    </section>
+    <!-- Whole Body Wrapper Ends -->
+    <!-- 1st Jquery Link Starts-->
+    <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Jquery Link Ends-->
+    <!-- Popper -->
+    <script src="frontend/assets/popper/popper.min.js"></script>
+    <!-- Popper Ends-->
+    <!-- 3rd Bootstrap Js Link Starts -->
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
+    <!-- Bootstrap Js Link Ends -->
+    <!-- Slick Js -->
+    <script src="frontend/assets/slick/slick.min.js"></script>
+    <!-- Slick Js Ends-->
+
+    <!-- Magnific Popup -->
+    <script src="frontend/assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup Ends-->
+    <!-- Custom Js Starts -->
+    <script src="https://k1ngzed.com/dist/swiper/swiper.min.js"></script>
+    <script src="https://k1ngzed.com/dist/EasyZoom/easyzoom.js"></script>
+    <script src="frontend/assets/js/main.js"></script>
+    <!-- Custom Js Ends -->
+
+</body>
+
+</html>
