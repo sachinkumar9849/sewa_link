@@ -660,7 +660,15 @@ section#productlist .grid-item {
     transition: all 0.5s;
     position: relative;
     padding: 10px;
+    text-align: left;
   }
+  section#productlist .category-title .category a {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 1px;
+    display: block;
+}
   
   section#productlist .product-grid-item a {
     text-decoration: none;
