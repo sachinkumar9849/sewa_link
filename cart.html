@@ -353,209 +353,217 @@
          </div>
       </div>
       <!--======================================================= HEADER END ======-->
-      <!--======================================================= BREADCRUMB START ======-->
-      <section id="breadcrumb_item" class="pb-0 breadcrumb mb-0">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 m-auto">
-                  <nav aria-label="breadcrumb">
-                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item font-weight-bold">
-                           <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>
-                           HOME</a>
-                        </li>
-                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
-                           <a href="cart.html" class="text-dark">cart</a>
-                        </li>
-                     </ol>
-                  </nav>
-               </div>
+<!--======================================================= ORDER TOP LIST START ==-->
+
+<section id="order_list_top">
+    <div class="container">
+        <div class="row">
+           
+            <div class="offset-1 col text-center">
+                <div class="img_order_list ">
+                   <div class="img_block_icon">
+                    <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+                   </div>
+                   <div class="content_img ">
+                    <h6 class="active-item"> 1.My Cart</h6>
+                   </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!--======================================================= BREADCRUMB END ======-->
-      <!-- Cart -->
-      <section id="cart-wrapper" class="py-3">
-         <div class="container">
-            <div class="row py-xl-5 py-md-3 py-0">
-               <div class="col-xl-3 col-lg-3 col-md-12 col-12 mb-xl-0 mb-lg-0 mb-3">
-                  <div class="dashboard-list py-lg-5 px-lg-3 d-lg-block d-none">
-                     <div class="d-user-avater text-center mb-4">
-                        <img src="https://e7.pngegg.com/pngimages/306/749/png-clipart-man-s-face-tom-hardy-side-view-at-the-movies-tom-hardy.png" class="img-fluid avater" alt="profile-image">
-                        <h5>Adam Harshvardhan</h5>
-                        <a href=""> <span class="mr-1"><i class="fa fa-pencil" aria-hidden="true"></i></span> Upload Image</a>
-                     </div>
-                     <ul class="sidebar">
-                        <li class="active mb-3 p-2">
-                           <a href="dashboard-profile.html"><span class="mr-2"><i class="fa fa-user" aria-hidden="true"></i></span>Profile</a>
-                        </li>
-                        <li class="mb-3 p-2">
-                           <a href="dashboard-order-status.html"><span class="mr-2"><i class="fa fa-sort" aria-hidden="true"></i></span>Order Status</a>
-                        </li>
-                        <li class="mb-3 p-2">
-                           <a href="dashboard-cart.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>My Cart</a>
-                        </li>
-                        <li class="mb-3 p-2">
-                           <a href="dashboard-wishlist.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>Wishlist</a>
-                        </li>
-                        <li class="mb-3 p-2">
-                           <a href="dashboard-change-password.html"><span class="mr-2"><i class="fa fa-lock" aria-hidden="true"></i></span>Change Password</a>
-                        </li>
-                        <li class="mb-3 p-2">
-                           <a href="index.html"><span class="mr-2"><i class="fa fa-sign-out" aria-hidden="true"></i></span>Logout</a>
-                        </li>
-                     </ul>
+            <div class="col text-center">
+                <div class="img_order_list">
+                   <div class="img_block_icon">
+                    <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
+                   </div>
+                   <div class="content_img">
+                    <h6> 1.My Cart</h6>
+                   </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="img_order_list">
+                   <div class="img_block_icon">
+                    <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
+                   </div>
+                   <div class="content_img">
+                    <h6> 1.My Cart</h6>
+                   </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="img_order_list">
+                   <div class="img_block_icon">
+                    <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
+                   </div>
+                   <div class="content_img">
+                    <h6> 1.My Cart</h6>
+                   </div>
+                </div>
+            </div>
+            <div class="col text-center  mr-5 pr-5">
+                <div class="img_order_list">
+                   <div class="img_block_icon">
+                    <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
+                   </div>
+                   <div class="content_img">
+                    <h6> 1.My Cart</h6>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--======================================================= ORDER TOP LIST END ======-->
+
+<!--======================================================= CART START ======-->
+<section id="cart_user" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 bg-white p-3">
+                <div class="table-responsive-lg">
+                    <table class="table">
+                       <thead>
+                          <tr>
+                             <th class="img_table text-left th_size border-0">Image</th>
+                             <th class="text-left th_size border-0">Product Name</th>
+                             <th class="text-left th_size border-0">Quantity</th>
+                             <th class="text-left th_size border-0">Total</th>
+                             <th class="text-left remove_block_last border-0">Remove</th>
+                          </tr>
+                       </thead>
+                       <!-- /thead -->
+                       <tbody>
+                          <tr>
+                             <td id="">
+                                <a class="img_men_cart" href="detail.html">
+                                <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/heade1-300x300.png" class="img-fluid">
+                                </a>
+                             </td>
+                             <td class="">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                             </td>
+                             <td class="">
+                                <div class="input_b">
+                                   <b onclick="{inc}" class="minus_b">-</b>
+                                   <input type="number" class="count_b" name="qty" value="1" disabled="">
+                                   <b class="plus_b">+</b>
+                                </div>
+                             </td>
+                             <td class="">
+                                <span class="cart-grand-total-price">$300.00</span>
+                             </td>
+                             <td class=""><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td id="">
+                                <a class="img_men_cart" href="detail.html">
+                                <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/heade1-300x300.png" class="img-fluid">
+                                </a>
+                             </td>
+                             <td class="">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                             </td>
+                             <td class="">
+                                <div class="input_b">
+                                    <b onclick="{inc}" class="minus_b">-</b>
+                                    <input type="number" class="count_b" name="qty" value="1" disabled="">
+                                    <b class="plus_b">+</b>
+                                 </div>
+                             </td>
+                             <td class="">
+                                <span class="cart-grand-total-price">$300.00</span>
+                             </td>
+                             <td class=""><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
+                             </td>
+                          </tr>
+                          <tr class="bordered-1">
+                             <td id="">
+                                <a class="img_men_cart" href="detail.html">
+                                <img src="https://cyberstore.qodeinteractive.com/wp-content/uploads/2017/08/h5-slide-background-img-3.jpg" class="img-fluid">
+                                </a>
+                             </td>
+                             <td class="">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                             </td>
+                             <td class="">
+                                <div class="input_b">
+                                    <b onclick="{inc}" class="minus_b">-</b>
+                                    <input type="number" class="count_b" name="qty" value="1" disabled="">
+                                    <b class="plus_b">+</b>
+                                 </div>
+                             </td>
+                             <td class="">
+                                <span class="cart-grand-total-price">$300.00</span>
+                             </td>
+                             <td class=""><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
+                             </td>
+                          </tr>
+                         
+                       </tbody>
+                       <!-- /tbody -->
+                    </table>
+                   
+                 </div>
+                 <div class="button_block d-flex justify-content-between align-items-center">
+                     <a href=""> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
+                     <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
+                    <a href=""> <button class="btn_custom"> Continue to Shipping</button></a>
+                 </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 bg-white text-left">
+                  <div class="cart_user_top">
+                      <div class="cart_summary d-flex justify-content-between">
+                        <strong class="cart_text mb-3 d-block font-weight-bold">Summary</strong>
+                        <span class="item_block">1 Items</span>
+                      </div>
                   </div>
-                  <!-- Mobile Profile Nav -->
-                  <ul class="mobile-profile-nav d-lg-none d-flex flex justify-content-around align-items-center h-100" data-toggle="modal" data-target="#profilemobilenav">
-                     <li>
-                        <span class="active"><i class="fa fa-user" aria-hidden="true"></i></span>
-                     </li>
-                     <li>
-                        <span><i class="fa fa-sort" aria-hidden="true"></i></span>
-                     </li>
-                     <li>
-                        <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
-                     </li>
-                     <li>
-                        <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                     </li>
-                     <li>
-                        <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
-                     </li>
-                  </ul>
-                  </button>
-                  <!-- Mobile Profile Nav Ends-->
-               </div>
-               <div class="col-xl-9 col-lg-9 col-md-12 col-12">
-                  <div class="profile-side-detail-edit">
-                     <div class="dashboard-content d-flex align-items-center h-100">
-                        <div class="shopping-cart">
-                           <div class="shopping-cart-table">
-                              <div class="table-responsive-lg">
-                                 <table class="table">
-                                    <thead>
-                                       <tr>
-                                          <th class="th_size">Image</th>
-                                          <th class="th_size">Product Name</th>
-                                          <th class="th_size">Quantity</th>
-                                          <th class="th_size">Total</th>
-                                          <th class="remove_block_last">Remove</th>
-                                       </tr>
-                                    </thead>
-                                    <!-- /thead -->
-                                    <tbody>
-                                       <tr>
-                                          <td class="text-center">
-                                             <a class="img_men_cart" href="detail.html">
-                                             <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/heade1-300x300.png" class="img-fluid">
-                                             </a>
-                                          </td>
-                                          <td class="text-center">
-                                             In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                          </td>
-                                          <td class="text-center">
-                                             <div class="input_block">
-                                                <b onclick="{inc}" class="minus">-</b>
-                                                <input type="number" class="count" name="qty" value="1" disabled="">
-                                                <b class="plus">+</b>
-                                             </div>
-                                          </td>
-                                          <td class="text-center">
-                                             <span class="cart-grand-total-price">$300.00</span>
-                                          </td>
-                                          <td class="text-center"><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="text-center">
-                                             <a class="img_men_cart" href="detail.html">
-                                             <img src="https://cyberstore.qodeinteractive.com/wp-content/uploads/2017/08/h5-slide-background-img-3.jpg" class="img-fluid">
-                                             </a>
-                                          </td>
-                                          <td class="text-center">
-                                             In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                          </td>
-                                          <td class="text-center">
-                                             <div class="input_block">
-                                                <b onclick="{inc}" class="minus">-</b>
-                                                <input type="number" class="count" name="qty" value="1" disabled="">
-                                                <b class="plus">+</b>
-                                             </div>
-                                          </td>
-                                          <td class="text-center">
-                                             <span class="cart-grand-total-price">$300.00</span>
-                                          </td>
-                                          <td class="text-center"><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="text-center">
-                                             <a class="img_men_cart" href="detail.html">
-                                             <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/heade1-300x300.png" class="img-fluid">
-                                             </a>
-                                          </td>
-                                          <td class="text-center">
-                                             In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                          </td>
-                                          <td class="text-center">
-                                             <div class="input_block">
-                                                <b onclick="{inc}" class="minus">-</b>
-                                                <input type="number" class="count" name="qty" value="1" disabled="">
-                                                <b class="plus">+</b>
-                                             </div>
-                                          </td>
-                                     <td class="text-center">
-                                             <span class="cart-grand-total-price">$300.00</span>
-                                          </td>
-                                          <td class="text-center"><a href="#" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a>
-                                          </td>
-                                       </tr>
-                                    </tbody>
-                                    <!-- /tbody -->
-                                 </table>
-                                 <div class="d-flex justify-content-around align-items-center w-100 my-3 flex-wrap">
-                                    <!-- <form class="coupon-field d-flex flex-wrap align-items-center justify-content-center">
-                                       <input type="text" placeholder="Apply Coupon Code" class="mr-2">
-                                       <button type="button" class="btn-custom mt-xl-0 mt-md-0 mt-2 rounded-0">Apply Coupon</button>
-                                       </form> -->
-                                    <div class="total-amount font-weight-bold mt-xl-0 mt-md-0 mt-2 text-dark">
-                                       Total Amount : <span>$2000</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row d-flex align-items-center text-center pl-2 mt-4">
-                              <div class="col-xl-4 col-lg-7 col-md-6 col-12 my-3">
-                                 <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 text-left">
-                                    <strong class="cart_text mb-3 d-block font-weight-bold">Cart Summary</strong>
-                                    <div class="cart-price d-flex justify-content-between mb-2">
-                                       <h6 class="">Sub Total</h6>
-                                       <span class="cart_text">NPR 200</span>
-                                    </div>
-                                    <div class="cart-price d-flex justify-content-between mb-2">
-                                       <h6 class="">Shipping Cost</h6>
-                                       <span class="cart_text">NPR 0</span>
-                                    </div>
-                                    <hr>
-                                    <div class="cart-price d-flex justify-content-between mb-2">
-                                       <h6 class="">Grand Total</h6>
-                                       <span class="cart_text">NPR 200</span>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-xl-4 col-lg-4 col-md-6 col-12 my-3">
-                                 <button type="button" class="btn-custom rounded-0">Proceed Checkout</button>
-                              </div>
-                           </div>
+                   <div class="cart-price d-flex justify-content-between mb-2">
+                      <h6 class="">
+                        PRODUCT</h6>
+                      <span class="cart_text">TOTAL</span>
+                   </div>
+                   <div class="cart-price d-flex justify-content-between mb-2">
+                      <h6 class="">Pearl Green Tea - regular <span>× 1</span> </h6>
+                      <span class="cart_text">NPR 0</span>
+                   </div>
+                   <div class="cart-price d-flex justify-content-between mb-2">
+                      <h6 class="">
+                        SUBTOTAL </h6>
+                      <span class="cart_text">Rs810.00</span>
+                   </div>
+                   <div class="cart-price d-flex justify-content-between mb-2">
+                      <h6 class="">
+                        TAX </h6>
+                      <span class="cart_text">Rs0.00</span>
+                   </div>
+                   <div class="cart-price d-flex justify-content-between mb-2">
+                      <h6 class="">
+                        TOTAL SHIPPING </h6>
+                      <span class="cart_text">Rs100.00</span>
+                   </div>
+                   <hr>
+                   <div class="cart-price d-flex justify-content-between ">
+                      <h6 class="">TOTAL</h6>
+                      <span class="cart_text">Rs910.00</span>
+                   </div>
+                   <div class="cart-price border-0 mt-3">
+                    <form class="form-inline border-0">
+                        <input type="hidden">                        <div class="form-group flex-grow-1">
+                            <input type="text" class="form-control w-100 rounded-0" name="code" placeholder="Have coupon code? Enter here" required="">
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Cart Ends -->
+                        <button type="submit" class="btn btn-base-1">Apply</button>
+                    </form>
+                   </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!--======================================================= CART END ======-->
+     
       <!--=============================FOOTER START  ============================ -->
       <footer
          id="footer"

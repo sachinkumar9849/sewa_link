@@ -215,11 +215,57 @@ td{
 }
 i.fa.fa-trash-o{
   transition: .3s;
+  
+  color: var(--black);
 }
 i.fa.fa-trash-o:hover{
   color: red;
 }
 /*=================================================== TABLE CSS END  */
+/*=================================================== BUTTON CSS START  */
+section#cart_user .btn_custom {
+  padding: 10px 27px;
+  background: var(--theme_color);
+  color: var(--black);
+  text-decoration: none;
+  text-decoration-line: none;
+  transition: .4s linear;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 0px;
+  font-size: 14px;
+  border: 0;
+}
+
+section#cart_user .btn_custom:hover {
+  color: white;
+}
+
+section#cart_user .btn_custom:hover::before {
+  transform: scaley(1);
+  color: black;
+  z-index: -1;
+}
+ 
+section#cart_user .btn_custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+  z-index: 1;
+  transition: transform .5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(.5, 1.6, .4, .7);
+  transform: scaley(0);
+}
+
+/*=================================================== BUTTON CSS END  */
 
 
 /*=================================================== HEADER START  */
@@ -1719,6 +1765,321 @@ section#checkout .text_gray {
 	font-size: 14px;
 }
 
-/*============================================== CHECKOUT PAGE END =======================*/
+/*=============================== CHECKOUT PAGE END =======================*/
+
+/*=============================== CART PAGE START =======================*/
+section#order_list_top .img_order_list img {
+  width: 30px;
+}
+section#order_list_top {
+  background: #e9ecef85;
+  padding: 15px 0;
+  background-color: #fcfcfc;
+  border: 2px solid #f1f1f1 !important;
+}
+section#order_list_top .img_order_list h6 {
+  font-weight: 600;
+    color: #000000bf;
+    padding-top: 6px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+h6.active-item {
+  color: #fed700 !important;
+}
+/* cart content start  */
+section#cart_user {
+  background-color: #f3f3f3;
+}
+section#cart_user th.text-left {
+  text-align: left !important;
+}
+/* section#cart_user .img_men_cart img {
+  min-width: 136px;
+  max-width: 136px;
+  min-height: 136px;
+  max-height: 136px;
+} */
+section#cart_user .img_men_cart img {
+  min-width: 113px;
+  max-width: 113px;
+  min-height: 99px;
+  object-fit: cover;
+  max-height: 99px;
+}
+section#cart_user th.th_size {
+  width: 60px;
+  text-align: left !important;
+}
+section#cart_user th.text-left.th_size.border-0 {
+  width: 136px;
+  text-align: left !important;
+}
+section#cart_user .input_block {
+ 
+  margin: unset;
+ 
+}
+ .table td, .table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+section#cart_user .button_block a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  transition: .3s;
+}
+section#cart_user .button_block a:hover {
+  color: var(--theme_color);
+  
+}
+section#cart_user b.minus {
+  width: 18px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+section#cart_user .button_block {
+  border-top: 1px solid #dee2e6;
+  padding-top: 20px;
+}
+.input_b {
+  border: 1px solid #d9d8d8;
+  width: 60px;
+  display: flex;
+}
+b.minus_b {
+  width: 20px;
+  text-align: center;
+  /* display: inline-block; */
+}
+input.count_b {
+  width: 26px;
+  border: 0;
+  text-align: center;
+}
+b.plus_b {
+  width: 20px;
+  text-align: center;
+}
+section#cart_user .cart-price {
+  font-size: 14px;
+}
+section#cart_user .cart-price h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+section#cart_user .item_block {
+  background: var(--theme_color);
+  /* padding: 0; */
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px;
+  padding: 0 7px;
+  font-size: 13px;
+}
+
+section#cart_user .cart_user_top {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 15px;
+}
+section#cart_user .cart_summary {
+  font-size: 19px;
+}
+button.btn.btn-base-1 {
+  background: var(--theme_color);
+  border-radius: 0;
+}
+/*=============================== CART PAGE END =======================*/
+
+/*=================================================== SHIPPING START  */
+
+:root {
+  --card-line-height: 1.2em;
+  --card-padding: 1em;
+  --card-radius: 0.5em;
+  /* --color-green: #558309;
+  --color-gray: #e2ebf6;
+  --color-dark-gray: #c4d1e1; */
+  --radio-border-width: 2px;
+  --radio-size: 1.5em;
+  }
+  div#shipping input.radio {
+      width: 36px;
+      text-align: center;
+      height: 36px;
+  }
+  
+  section#checkout .grid {
+      display: grid;
+      grid-gap: var(--card-padding);
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 0;
+  }
+  @media (min-width: 42em) {
+  section#checkout .grid {
+  grid-template-columns: repeat(3, 1fr);
+  }
+  }
+  section#checkout .card {
+  background-color: #fff;
+  border-radius: var(--card-radius);
+  position: relative;
+  }
+  section#checkout .card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  section#checkout .radio {
+  font-size: inherit;
+  margin: 0;
+  position: absolute;
+  right: calc(var(--card-padding) + var(--radio-border-width));
+  top: calc(var(--card-padding) + var(--radio-border-width));
+  }
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  section#checkout .radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff;
+  border: var(--radio-border-width) solid var(--color-gray);
+  border-radius: 50%;
+  cursor: pointer;
+  height: var(--radio-size);
+  outline: none;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out;
+  width: var(--radio-size);
+  }
+  section#checkout .radio::after {
+  border: var(--radio-border-width) solid #fff;
+  border-top: 0;
+  border-left: 0;
+  content: '';
+  display: block;
+  height: 0.75rem;
+  left: 25%;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translate(-50%, -50%);
+  width: 0.375rem;
+  }
+  section#checkout .radio:checked {
+  background: var(--blue);;
+  border-color: var(--blue);;
+  }
+  section#checkout .card:hover .radio {
+  border-color: gray;
+  }
+  section#checkout .card:hover .radio:checked {
+  border-color: var(--blue);;
+  }
+  }
+  section#checkout .plan-details {
+  border: var(--radio-border-width) solid var(--color-gray);
+  border-radius: var(--card-radius);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: var(--card-padding);
+  transition: border-color 0.2s ease-out;
+  }
+  section#checkout .card:hover .plan-details {
+  border-color: gray;
+  }
+  section#checkout .radio:checked ~ .plan-details {
+  border-color: var(--blue);;
+  }
+  section#checkout .radio:focus ~ .plan-details {
+  box-shadow: 0 0 0 2px gray;
+  }
+  section#checkout .radio:disabled ~ .plan-details {
+  color: gray;
+  cursor: default;
+  }
+  section#checkout .radio:disabled ~ .plan-details .plan-type {
+  color: gray;
+  }
+  section#checkout .card:hover .radio:disabled ~ .plan-details {
+  border-color: var(--color-gray);
+  box-shadow: none;
+  }
+  section#checkout .card:hover .radio:disabled {
+  border-color: var(--color-gray);
+  }
+  section#checkout .plan-type {
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1em;
+  }
+  section#checkout .plan-cost {
+      font-size: 1.5rem;
+  /* font-weight: bold; */
+  padding: 0;
+  }
+  section#checkout .slash {
+  font-weight: normal;
+  }
+  section#checkout .plan-cycle {
+  font-size: 2rem;
+  font-variant: none;
+  border-bottom: none;
+  cursor: inherit;
+  text-decoration: none;
+  }
+  section#checkout .hidden-visually {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  }
+  span.right_bold {
+    padding-left: 5px;
+    font-weight: 600;
+}
+div#shipping input.radio {
+  width: 36px;
+  text-align: center;
+  height: 36px;
+  position: absolute;
+  right: 5%;
+}
+
+  /*=================================================== SHIPPING END  */
+
+  /*=================================================== DELIVERY INFO START  */
+  .shipping_radio.custom-radio {
+    position: relative;
+    width: 196px;
+   
+}
+label.shipping_radio-label {
+  padding: 17px 20px;
+  display: block;
+  background: #f3f3f3;
+  border: 1px solid;
+  border-radius: 5px;
+}
+input#defaultUnchecked {
+  position: absolute;
+  top: 54%;
+  left: 2%;
+  transform: translate(5%, -60%);
+}
+.delivery_info_img img {
+  width: 100px;
+}
+.title_delivery {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 7px;}
+  /*=================================================== DELIVERY INFO END  */
 
   
