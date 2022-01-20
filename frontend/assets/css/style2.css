@@ -27,12 +27,13 @@ body {
     --black_light_one: #7D879C;
     --gray: #878787;
     --secondary-color: #333e48;
+    --theme_color_sub:#f78035;
 }
 
 .btn-custom {
     padding: 10px 27px;
-    background: var(--theme_color);
-    color: var(--black);
+    background: var(--theme_color_sub);
+    color: var(--white);
     text-decoration: none;
     text-decoration-line: none;
     transition: .4s linear;

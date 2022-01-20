@@ -54,13 +54,27 @@
                <div class="top-social-icon">
                   <ul class="mb-0">
                      <li class="d-flex align-items-center top_head_right">
-                        <a href="Track Your Order.html" class="trak_order"
-                           ><span class="text-dark">Track Your Order</span></a
-                           >
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           Track Your Order
+
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3 ">
+                              <div class="input_track_blo d-flex">
+                                 <input type="text" placeholder="Track Your Order"/>
+                              <button class="btn_custom_go">Go</button>
+                              </div>
+                           </ul>
+                        </div>
                         <!-- user login start  -->
                         <div class="dropdown user_login_mobile">
                            <button
-                              class="btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal"
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
                               type="button"
                               data-toggle="dropdown"
                               >
@@ -187,7 +201,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-2">
-                  <a class="navbar-brand text-dark font-weight-bold" href="#">Sewa Logo <img src="" alt="" class="img-fluid"></a>
+                  <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
                </div>
                <div class="col-md-8">
                   <div class="search_men">
@@ -251,8 +265,8 @@
                         </li> -->
                      <li>
                         <a href="" class="position-relative">
-                       <sub class='sub_block'>0</sub>
-                        <img
+                       <sub class='sub_block'>1</sub>
+                        <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
                            src="./frontend/assets/images/logo/compare.svg"
                            class="img-fluid"
                            alt=""
@@ -261,7 +275,7 @@
                      <li>
                         <a href="" class="position-relative">
                        <sub class='sub_block'>0</sub
-                           ><img
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
                            src="./frontend/assets/images/logo/wishlist.svg"
                            class="img-fluid"
                            alt=""
@@ -270,7 +284,7 @@
                      <li>
                         <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        <sub class='sub_block'>1</sub
-                           ><img
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
                            src="./frontend/assets/images/logo/cart.svg"
                            class="img-fluid"
                            alt=""
@@ -345,261 +359,157 @@
          </div>
       </div>
       <!--======================================================= HEADER END ======-->
-      <!--======================================================= BREADCRUMB START ======-->
-      <section id="breadcrumb_item" class="pb-0 breadcrumb mb-0">
+      <!--======================================================= ORDER TOP LIST START ==-->
+      <section id="order_list_top">
          <div class="container">
             <div class="row">
-               <div class="col-md-12 m-auto">
-                  <nav aria-label="breadcrumb">
-                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item font-weight-bold">
-                           <a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>
-                           HOME</a>
-                        </li>
-                        <li class="breadcrumb-item font-weight-bold" aria-current="page">
-                           <a href="cart.html" class="text-dark">Checkout</a>
-                        </li>
-                     </ol>
-                  </nav>
+               <div class="offset-1 col text-center">
+                  <div class="img_order_list ">
+                     <div class="img_block_icon">
+                        <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+                     </div>
+                     <div class="content_img ">
+                        <h6 class=""> 1.My Cart</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col text-center">
+                  <div class="img_order_list">
+                     <div class="img_block_icon">
+                        <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
+                     </div>
+                     <div class="content_img">
+                        <h6> 2.Shipping Info</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col text-center">
+                  <div class="img_order_list">
+                     <div class="img_block_icon">
+                        <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
+                     </div>
+                     <div class="content_img">
+                        <h6 class=""> 3 Delivery Info</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col text-center">
+                  <div class="img_order_list">
+                     <div class="img_block_icon">
+                        <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
+                     </div>
+                     <div class="content_img">
+                        <h6 class="active-item"> 4. Payment</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col text-center  mr-5 pr-5">
+                  <div class="img_order_list">
+                     <div class="img_block_icon">
+                        <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
+                     </div>
+                     <div class="content_img">
+                        <h6> 5. Confirmation</h6>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </section>
-      <!--======================================================= BREADCRUMB END ======-->
-<!--========================== CHECKOUT START  --->
-<section id="checkout" class="padding">
-    <div class="container">
-      <div class="checkout-wrapper box_shado px-4 pt-4">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="my-car-title d-flex mb-3">
-              <div class="my-cart-number">1</div>
-              <div class="my-cart-order">
-                <h4>Order Summary</h4>
-              </div>
-            </div>
-            <!-- table start  -->
-            <div id="table_content" class="table-responsive-lg">
-              <table class="table border_new">
-                <thead>
-                  <tr class="text-center">
-                    <th class="font-weight-bold text-dark">Product Image</th>
-                    <th class="font-weight-bold text-dark t-cart">Product</th>
-                    <th class="font-weight-bold text-dark">Price</th>
-                    <th class="font-weight-bold text-dark">Quantity</th>
-                    <th class="font-weight-bold text-dark">Discount</th>
-                    <th class="font-weight-bold text-dark">Total</th>
-                  </tr>
-                </thead>
-                <tbody class="text-center">
-                  <tr class="text-center">
-                    <td class="border_trhee">
-                      <div class="img-block">
-                        <img
-                          src="https://montechbd.com/shopist/demo/public/uploads/1619866402-h-250-7-front-f.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="d-flex flex-column w-100">
-                        <div class="head w-100">Blue Diamond Almonds</div>
-                      </div>
-                    </td>
-                    <td class="text_gray">$20</td>
-                    <!-- <td class="text_gray">
-                      <div class="qty">
-                        <span class="minus">-</span>
-                        <input
-                          type="number"
-                          class="count"
-                          name="qty"
-                          value="1"
-                        />
-                        <span class="plus">+</span>
-                      </div>
-                    </td> -->
-                    <td class="text-center">
-                     <div class="input_block">
-                        <b onclick="{inc}" class="minus">-</b>
-                        <input type="number" class="count" name="qty" value="1" disabled="">
-                        <b class="plus">+</b>
+      <!--======================================================= ORDER TOP LIST END ======-->
+      <!--======================================================= CART START ======-->
+      <section id="cart_user" class="py-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 bg-white p-3">
+                  <div class="title_delivery mb-2">
+                     <h6>Select a payment option</h6>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="image_payment" data-toggle="tooltip" data-placement="top" title="Cash on Delivery">
+                              <a href="#"> <img class="img_select img-fluid" src="./frontend/assets/images/delivery-payment.png" 
+                                 ></a>
+                           </div>
+                        </div>
+                        <div class="col-md-8">
+                           <div class="esew_men_block d-flex align-items-center">
+                              <div class="or_block">
+                                 <h5 class="mr-4">or</h5>
+                              </div>
+                              <div class="payment_esewa">
+                                 <h5>Your E-Sewa balance : <span class="font-weight-bold">Rs0.00</span></h5>
+                                 <button type="button" class="btn_custom" disabled="">Insufficient balance</button>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                  </td>
-                    <td class="text_gray">$0</td>
-                    <td class="text_gray">$20</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"></th>
-                    <td class="text_gray" colspan="3"></td>
-                    <td class="text_gray">Total</td>
-                    <td class="text_gray">$20</td>
-                  </tr>
-                </tbody>
-              </table>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="button_block d-flex justify-content-between align-items-center">
+                        <a href=""> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
+                        <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
+                        <a href="order-success.html"> <button class="btn_custom"> Complet Order</button></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 bg-white text-left">
+                     <div class="cart_user_top">
+                        <div class="cart_summary d-flex justify-content-between">
+                           <strong class="cart_text mb-3 d-block font-weight-bold">Summary</strong>
+                           <span class="item_block">1 Items</span>
+                        </div>
+                     </div>
+                     <div class="cart-price d-flex justify-content-between mb-2">
+                        <h6 class="">
+                           PRODUCT
+                        </h6>
+                        <span class="cart_text">TOTAL</span>
+                     </div>
+                     <div class="cart-price d-flex justify-content-between mb-2">
+                        <h6 class="">Pearl Green Tea - regular <span>× 1</span> </h6>
+                        <span class="cart_text">NPR 0</span>
+                     </div>
+                     <div class="cart-price d-flex justify-content-between mb-2">
+                        <h6 class="">
+                           SUBTOTAL 
+                        </h6>
+                        <span class="cart_text">Rs810.00</span>
+                     </div>
+                     <div class="cart-price d-flex justify-content-between mb-2">
+                        <h6 class="">
+                           TAX 
+                        </h6>
+                        <span class="cart_text">Rs0.00</span>
+                     </div>
+                     <div class="cart-price d-flex justify-content-between mb-2">
+                        <h6 class="">
+                           TOTAL SHIPPING 
+                        </h6>
+                        <span class="cart_text">Rs100.00</span>
+                     </div>
+                     <hr>
+                     <div class="cart-price d-flex justify-content-between ">
+                        <h6 class="">TOTAL</h6>
+                        <span class="cart_text">Rs910.00</span>
+                     </div>
+                     <div class="cart-price border-0 mt-3">
+                        <form class="form-inline border-0">
+                           <input type="hidden">                        
+                           <div class="form-group flex-grow-1">
+                              <input type="text" class="form-control w-100 rounded-0" name="code" placeholder="Have coupon code? Enter here" required="">
+                           </div>
+                           <button type="submit" class="btn btn-base-1">Apply</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- table end  -->
-          </div>
-          <div class="col-xl-12">
-            <div class="my-car-title d-flex mb-3 mt-4">
-              <div class="my-cart-number">2</div>
-              <div class="my-cart-order">
-                <h4>Shipping Information</h4>
-              </div>
-            </div>
-            <!--========================== PRODUCTS START  --->
-            <!--========================== SHIPPING START  --->
-
-            <div class="grid" id="shipping">
-              <label class="card">
-                <input name="plan" class="radio" type="radio" checked />
-
-                <span class="plan-details">
-                  <span class="plan-type">Basic</span>
-                  <span class="plan-cost"
-                    >$0<span class="slash">/</span
-                    ><abbr class="plan-cycle" title="month">mo</abbr></span
-                  >
-                  <span>1 team member</span>
-                  <span>100 GB/mo</span>
-                  <span>1 concurrent build</span>
-                </span>
-              </label>
-              <label class="card">
-                <input name="plan" class="radio" type="radio" />
-                <span class="hidden-visually"
-                  >Pro - $50 per month, 5 team members, 500 GB per month, 5
-                  concurrent builds</span
-                >
-                <span class="plan-details" aria-hidden="true">
-                  <span class="plan-type">Pro</span>
-                  <span class="plan-cost"
-                    >$50<span class="slash">/</span
-                    ><span class="plan-cycle">mo</span></span
-                  >
-                  <span>5 team members</span>
-                  <span>500 GB/mo</span>
-                  <span>5 concurrent builds</span>
-                </span>
-              </label>
-              <label class="card">
-                <input name="plan" class="radio" type="radio" />
-                <span class="hidden-visually"
-                  >Business - $200 per month, 5+ team members, 1000 GB per
-                  month, Unlimited builds</span
-                >
-                <span class="plan-details" aria-hidden="true">
-                  <span class="plan-type">Business</span>
-                  <span class="plan-cost"
-                    >$200<span class="slash">/</span
-                    ><span class="plan-cycle">mo</span></span
-                  >
-                  <span>5+ team members</span>
-                  <span>1000 GB/mo</span>
-                  <span>Unlimited builds</span>
-                </span>
-              </label>
-            </div>
-            <!--========================== SHIPPING end  --->
-            <!--========================== PRODUCTS END  --->
-            <!--========================== PRODUCTS END  --->
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="First name"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="Last name"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">Address</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="Nepal"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">Cite</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="Nepal"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">Country</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="Nepal"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label for="" class="text_gray mt-3">Postal Code</label>
-                  <input
-                    type="text"
-                    class="form-control w-100"
-                    placeholder="5468"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-12">
-            <div class="my-car-title d-flex mt-5">
-              <div class="my-cart-number">3</div>
-              <div class="my-cart-order">
-                <h4>Payment Information</h4>
-              </div>
-            </div>
-            <div class="my-cart-payment">
-              <ul class="mb-0 py-4">
-                <li>
-                  <span
-                    class="d-flex justify-content-start justify-content-lg-center align-items-center"
-                  >
-                    <input type="radio" />
-                    <h5 class="font-weigth-normal mb-0">Khalti</h5>
-                  </span>
-                </li>
-                <li>
-                  <span
-                    class="d-flex justify-content-start justify-content-lg-center align-items-center"
-                  >
-                    <input type="radio" />
-                    <h5 class="font-weigth-normal mb-0">E-sewa</h5>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="my-car-title d-flex mb-3">
-              <div class="my-cart-number">4</div>
-              <div class="my-cart-order">
-                <h4>Confirm Order</h4>
-              </div>
-            </div>
-            <div class="btn_groups-single large-btn my-5 rounded-0">
-              <a href="course-detail.html" class="btn-purpal">Confirm</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--========================== CHECKOUT END  --->
+         </div>
+      </section>
+      <!--======================================================= CART END ======-->
       <!--=============================FOOTER START  ============================ -->
       <footer
          id="footer"

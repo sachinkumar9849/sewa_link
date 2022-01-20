@@ -45,6 +45,7 @@
          href="frontend/assets/countdown/css/flipclock.css"
          />
       <!-- Countdown end -->
+    
    </head>
    <body>
       <!-- <div id="loading"></div> -->
@@ -54,13 +55,27 @@
                <div class="top-social-icon">
                   <ul class="mb-0">
                      <li class="d-flex align-items-center top_head_right">
-                        <a href="Track Your Order.html" class="trak_order"
-                           ><span class="text-dark">Track Your Order</span></a
-                           >
+                        <div class="dropdown user_login_mobile">
+                           <button
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
+                              type="button"
+                              data-toggle="dropdown"
+                              >
+                           Track Your Order
+
+                           <span class="caret"></span>
+                           </button>
+                           <ul class="my_account dropdown-menu pl-3 ">
+                              <div class="input_track_blo d-flex">
+                                 <input type="text" placeholder="Track Your Order"/>
+                              <button class="btn_custom_go">Go</button>
+                              </div>
+                           </ul>
+                        </div>
                         <!-- user login start  -->
                         <div class="dropdown user_login_mobile">
                            <button
-                              class="btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal"
+                              class="text-light btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal "
                               type="button"
                               data-toggle="dropdown"
                               >
@@ -142,6 +157,7 @@
                                                       ></a>
                                                 </td>
                                              </tr>
+                                            
                                           </tbody>
                                        </table>
                                     </div>
@@ -186,7 +202,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-2">
-                  <a class="navbar-brand text-dark font-weight-bold" href="#">Sewa Logo <img src="" alt="" class="img-fluid"></a>
+                  <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
                </div>
                <div class="col-md-8">
                   <div class="search_men">
@@ -250,8 +266,8 @@
                         </li> -->
                      <li>
                         <a href="" class="position-relative">
-                        <sub class='sub_block'>0</sub>
-                        <img
+                       <sub class='sub_block'>1</sub>
+                        <img data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"
                            src="./frontend/assets/images/logo/compare.svg"
                            class="img-fluid"
                            alt=""
@@ -259,8 +275,8 @@
                      </li>
                      <li>
                         <a href="" class="position-relative">
-                        <sub class='sub_block'>0</sub
-                           ><img
+                       <sub class='sub_block'>0</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"
                            src="./frontend/assets/images/logo/wishlist.svg"
                            class="img-fluid"
                            alt=""
@@ -268,84 +284,75 @@
                      </li>
                      <li>
                         <a href="" class="position-relative"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <sub class='sub_block'>1</sub
-                           ><img
+                       <sub class='sub_block'>1</sub
+                           ><img data-toggle="tooltip" data-placement="top" title="" data-original-title="Cart"
                            src="./frontend/assets/images/logo/cart.svg"
                            class="img-fluid"
                            alt=""
                            /></a>
-                        <!-- cart dropdown start  -->
-                        <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
-                           <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
+                           <!-- cart dropdown start  -->
+                           <div class="dropdown-menu" id="cart_header_table" aria-labelledby="dropdownMenuButton">
+                             <h6 class="text-center font-weight-bold pt-1">Cart Items</h6>
                            <div class="table-responsive" >
-                              <table class="table mb-0">
-                                 <tbody>
-                                    <tr>
-                                       <td class="img_header_cart">
-                                          <div>
-                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                          </div>
-                                       </td>
-                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
-                                       <td>
-                                          <a href="" class="header_cart_icon">
-                                             <ii class="fa fa-trash-o" aria-hidden="true">
-                                             </i>
-                                          </a>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td class="img_header_cart">
-                                          <div>
-                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                          </div>
-                                       </td>
-                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
-                                       <td>
-                                          <a href="" class="header_cart_icon">
-                                             <ii class="fa fa-trash-o" aria-hidden="true">
-                                             </i>
-                                          </a>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td class="img_header_cart">
-                                          <div>
-                                             <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
-                                          </div>
-                                       </td>
-                                       <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
-                                       <td>
-                                          <a href="" class="header_cart_icon">
-                                             <ii class="fa fa-trash-o" aria-hidden="true">
-                                             </i>
-                                          </a>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
+                            <table class="table mb-0">
+                             
+                              <tbody>
+                                <tr>
+                                 
+                                  <td class="img_header_cart">
+                                    <div>
+                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                    </div>
+                                     </td>
+                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
+                                </tr>
+                                <tr>
+                                 
+                                  <td class="img_header_cart">
+                                    <div>
+                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                    </div>
+                                     </td>
+                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema </a> </td>
+                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
+                                </tr>
+                                <tr>
+                                 
+                                  <td class="img_header_cart">
+                                    <div>
+                                      <a href=""><img src="http://127.0.0.1:8000/uploads/products/thumbnail/awQYj0DwQtoWwENvsPuEeWNoHTzOqOZIihRxRj2u.jpeg" alt=""></a>
+                                    </div>
+                                     </td>
+                                  <td class="cart_header_title"> <a href="" class="text-dark">Electric Keema Machine Keema Maker</a> </td>
+                                  <td> <a href="" class="header_cart_icon"><ii class="fa fa-trash-o" aria-hidden="true"></i></a> </td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
                            </div>
+
                            <div class="cart_header_price d-flex justify-content-between">
-                              <div>
-                                 <h6>Subtotal</h6>
-                              </div>
-                              <div>
-                                 <h6>Rs4,300.00</h6>
-                              </div>
+                             <div> <h6>Subtotal</h6> </div>
+                             <div> <h6>Rs4,300.00</h6> </div>
                            </div>
+
                            <div class="
-                              top_cartmodal_btn
-                              d-flex
-                              justify-content-around
-                              align-items-center
-                              w-100 pt-2 
-                              ">
-                              <a href="cart.html" class="btn-custom rounded-0 py-2">
+                               top_cartmodal_btn
+                               d-flex
+                               justify-content-around
+                               align-items-center
+                               w-100 pt-2 
+                             ">
+                             <a href="cart.html" class="btn-custom rounded-0 py-2">
                               <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">&nbsp; View Cart</a>
-                              <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
+                             <a href="checkout.html" class="btn-custom rounded-0 py-2">Proceed Checkout</a>
                            </div>
-                        </div>
-                        <!-- cart dropdown end  -->
+                            
+                           
+                          </div>
+                          
+                           <!-- cart dropdown end  -->
                      </li>
                   </ul>
                </div>
@@ -365,7 +372,7 @@
                     <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
                    </div>
                    <div class="content_img ">
-                    <h6 class="active-item"> 1.My Cart</h6>
+                    <h6 class=""> 1.My Cart</h6>
                    </div>
                 </div>
             </div>
@@ -375,7 +382,7 @@
                     <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
                    </div>
                    <div class="content_img">
-                    <h6> 1.My Cart</h6>
+                    <h6> 2.Shipping Info</h6>
                    </div>
                 </div>
             </div>
@@ -385,7 +392,7 @@
                     <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
                    </div>
                    <div class="content_img">
-                    <h6> 1.My Cart</h6>
+                    <h6 class="active-item"> 3 Delivery Info</h6>
                    </div>
                 </div>
             </div>
@@ -395,7 +402,7 @@
                     <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
                    </div>
                    <div class="content_img">
-                    <h6> 1.My Cart</h6>
+                    <h6> 4. Payment</h6>
                    </div>
                 </div>
             </div>
@@ -405,7 +412,7 @@
                     <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
                    </div>
                    <div class="content_img">
-                    <h6> 1.My Cart</h6>
+                    <h6> 5. Confirmation</h6>
                    </div>
                 </div>
             </div>
@@ -425,26 +432,76 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="delivery_info_block d-flex align-items-center">
-                            <div class="delivery_info_img">
-                                <img src="http://127.0.0.1:8000/uploads/products/thumbnail/RbhtpeVo51vaSwVGjoBNwlhPjlgdIo57EJN8U8Dz.jpeg" class="img-fluid" alt="">
-                            </div>
-                            <div class="delivery_info_text ml-3">
-                                <h5> Pearl Green Tea</h5>
-                            </div>
-                        </div>
-                        	
-                  
-                    </div>
-                    <div class="col-md-6">
+                   <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-12">
+                           <div class="delivery_info_block d-flex align-items-center mb-4">
+                               <div class="delivery_info_img">
+                                   <img src="http://127.0.0.1:8000/uploads/products/thumbnail/RbhtpeVo51vaSwVGjoBNwlhPjlgdIo57EJN8U8Dz.jpeg" class="img-fluid" alt="">
+                               </div>
+                               <div class="delivery_info_text ml-3">
+                                   <h5> Pearl Green Tea</h5>
+                               </div>
+                           </div>
+                              
+                     
+                       </div>
+                        <div class="col-md-12">
+                           <div class="delivery_info_block d-flex align-items-center mb-4">
+                               <div class="delivery_info_img">
+                                   <img src="http://127.0.0.1:8000/uploads/products/thumbnail/RbhtpeVo51vaSwVGjoBNwlhPjlgdIo57EJN8U8Dz.jpeg" class="img-fluid" alt="">
+                               </div>
+                               <div class="delivery_info_text ml-3">
+                                   <h5> Pearl Green Tea</h5>
+                               </div>
+                           </div>
+                              
+                     
+                       </div>
+                      </div>
+
+                   </div>
+                   <div class="col-md-6">
+                    <div class="row">
+                     <div class="col-md-6">
                         	
                         <div class="shipping_radio custom-radio">
                             <input type="radio" class="shipping_radio-input" id="defaultUnchecked" name="defaultExampleRadios">
                             <label class="shipping_radio-label" for="defaultUnchecked">Home Delivery</label>
                           </div>
                     </div>
+                     <div class="col-md-6">
+                        	
+                        <div class="shipping_radio custom-radio">
+                            <input type="radio" class="shipping_radio-input" id="defaultUnchecke" name="defaultExampleRadios">
+                            <label class="shipping_radio-label" for="defaultUnchecke">Local Pickup </label>
+                           
+                          </div>
+                    </div>
+                    <div class="col-md-12">
+                     <div class="container_block">
+                        <div class="main_delivery_info">
+                         
+                          <select id="select_box">
+                            <option value="1">Select your nearest pickup point</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                        </select>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    </div>
+                   </div>
                 </div>
+                <div class="col-md-12">
+                  <div class="button_block d-flex justify-content-between align-items-center">
+                     <a href=""> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
+                     <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
+                    <a href="payment-select.html"> <button class="btn_custom"> Continue to Payment</button></a>
+                 </div>
+                 </div>
             </div>
 
             <div class="col-md-4">
@@ -495,6 +552,7 @@
                 </div>
              </div>
         </div>
+        
     </div>
 </section>
 <!--======================================================= CART END ======-->
@@ -660,6 +718,8 @@
       <!-- Custom Js Ends -->
       <!--============================================================= LINK START ====-->
       <!-- Popup Search Modal -->
+
+    
       <!-- Modal -->
       <div
          class="modal fade"
