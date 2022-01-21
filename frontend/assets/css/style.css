@@ -145,6 +145,9 @@ body {
 
 
 /*=================================================== CUSTOME CSS START  */
+.slick-dots li button {
+  display: none;
+}
 
 .section_title_block {
     border-bottom: 1px solid #ddd;
