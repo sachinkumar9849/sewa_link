@@ -65,9 +65,12 @@
                            <span class="caret"></span>
                            </button>
                            <ul class="my_account dropdown-menu pl-3 ">
-                              <div class="input_track_blo d-flex">
-                                 <input type="text" placeholder="Track Your Order"/>
+                              <div class="input_track_blo d-flex flex-column pb-2">
+                                 <label><small class="font-weight-bold">Track Your Order</small></label>
+                                 <div class="track_input_btn d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter order id"/>
                               <button class="btn_custom_go">Go</button>
+                                 </div>
                               </div>
                            </ul>
                         </div>
@@ -198,7 +201,7 @@
          </div>
       </header>
       <div class="nav_bar">
-         <div class="container">
+         <div class="container pl-0">
             <div class="row">
                <div class="col-md-2">
                   <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
@@ -253,16 +256,9 @@
                </div>
                <div class="col-md-2">
                   <ul
-                     class="cart_top_list d-flex justify-content-between mb-0 h-100 align-items-center"
+                     class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center"
                      >
-                     <!-- <li>
-                        <a href="" class="position-relative"
-                          ><img
-                            src="./frontend/assets/images/logo/user.svg"
-                            class="img-fluid"
-                            alt=""
-                        /></a>
-                        </li> -->
+                    
                      <li>
                         <a href="" class="position-relative">
                        <sub class='sub_block'>1</sub>
@@ -1135,7 +1131,7 @@
       <section id="productlist" class="pb-5">
          <div class="container">
          <div class="row">
-            <div class="col-md-3">
+            <div class="col-xl-3 col-md-4">
               <div class="flash_men">
                <div class="special_offer_men p-4 text-center">
                   <div class="special_header d-flex justify-content-between align-items-center">
@@ -1182,7 +1178,7 @@
                   </div>
                   <div class="special_left">
                      <a href="">
-                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/consal-300x300.png" class="img-fluid" alt="">
+                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/GoldPhone-1-300x300.png" class="img-fluid" alt="">
                         <h6>Game Console Controller + USB 3.0 Cable</h6>
                      </a>
                   </div>
@@ -1195,9 +1191,9 @@
                         <div id="countdown">
                            <ul class="d-flex align-items-center justify-content-center">
                               <!-- <li class="d-flex flex-column"><span id="days"></span>days</li> -->
-                              <li class="d-flex flex-column"><span id="hours"></span>Hours</li>
-                              <li class="d-flex flex-column"><span id="minutes"></span>Minutes</li>
-                              <li class="d-flex flex-column"><span id="seconds"></span>Seconds</li>
+                              <li class="d-flex flex-column"><span id="hours_a"></span>Hours</li>
+                              <li class="d-flex flex-column"><span id="minutes_a"></span>Minutes</li>
+                              <li class="d-flex flex-column"><span id="seconds_a"></span>Seconds</li>
                            </ul>
                         </div>
                      </div>
@@ -1206,7 +1202,7 @@
 
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-xl-9 col-md-8">
                <div class="row mb-4">
                   <div class="col-md-12">
                      <div class="section_title_block d-flex justify-content-between align-item-center h-100">
@@ -1574,6 +1570,43 @@
          </div>
       </section>
       <!--============================================= BEST SELLING END ======-->
+      <!--============================================= THREE BANNER SECTION START =-->
+      <!-- <section id="three_banner" class="pb-5">
+         <div class="container">
+           <div class="three_banner_slider">
+                <a href=""> <div class="three_banner_items">
+                  <div class="three_banner_img">
+                     <img src="http://127.0.0.1:8000/uploads/banners/HGSDNhP9tXpuihLyVq2p8pK7jCbEGNyFcCSdd6GG.jpeg" class="img-fluid" alt="img">
+                  </div>
+                </div></a>
+                  <a href="">
+                     <div class="three_banner_items">
+                        <div class="three_banner_img">
+                           <img src="http://127.0.0.1:8000/uploads/banners/QlemkcQxDKFJMnfERO9vauswnFtyB3DoPrtS4tNx.jpeg" class="img-fluid" alt="img">
+                        </div>
+                       </div>
+                  </a>
+                 <a href="">
+                  <div class="three_banner_items">
+                     <div class="three_banner_img">
+                        <img src="http://127.0.0.1:8000/uploads/banners/HGSDNhP9tXpuihLyVq2p8pK7jCbEGNyFcCSdd6GG.jpeg" class="img-fluid" alt="img">
+                     </div>
+                  </div>
+                 </a>
+                   
+                  <a href="">
+                     <div class="three_banner_items">
+                        <div class="three_banner_img">
+                           <img src="http://127.0.0.1:8000/uploads/banners/4JIMci1iwQC4AcqV8qlbsz3HafvlEd0dSwkD2FkH.jpeg" class="img-fluid" alt="img">
+                        </div>
+                      </div>
+                  </a>
+                   
+                 </div>
+           </div>
+         </div>
+      </section> -->
+      <!--============================================= THREE BANNER SECTION END ======-->
       <!--=========================================== FEATURED PRODUCT START ======-->
       <section id="productlist" class="pb-5">
          <div class="container">
@@ -1943,21 +1976,26 @@
       <section id="banner_two" class="mb-5">
          <div class="container">
             <div class="row">
-               <div class="col-md-6">
-                <div class="two_banner_img">
-                  <img src="https://electro.madrasthemes.com/wp-content/uploads/2018/04/home-v5-banner.png" class="img-fluid" alt="">
-                </div>
+               <div class="col-md-6 mb-3">
+                <a href="">
+                  <div class="two_banner_img">
+                     <img src="https://naulobazar.com/public/shop/logo/1.jpeg" class="img-fluid" alt="">
+                   </div>
+                </a>
                </div>
-               <div class="col-md-6">
-                <div class="two_banner_img">
-                  <img src="https://electro.madrasthemes.com/wp-content/uploads/2018/04/home-v5-banner.png" class="img-fluid" alt="">
-                </div>
-               </div>
+               <div class="col-md-6 mb-3">
+                  <a href="">
+                    <div class="two_banner_img">
+                       <img src="https://naulobazar.com/public/shop/logo/1.jpeg" class="img-fluid" alt="">
+                     </div>
+                  </a>
+                 </div>
+              
             </div>
          </div>
       </section>
       <!--=========================================== BANNER END ======-->
-      <section id="productlist" class="padding_bottom">
+      <section id="productlist" class="pb-5">
          <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -2320,6 +2358,334 @@
          </div>
       </section>
       <!--============================================= FEATURED PRODUCT END ======-->
+      <!--============================================= VENDER START ======-->
+      <section id="vendor-listing-wrapper" class="padding_bottom">
+         <div class="container">
+            <div class="row mb-4">
+               <div class="col-md-12">
+                  <div class="section_title_block d-flex justify-content-between align-item-center h-100">
+                     <h2 class="position-relative mb-0">Our Top Vendors</h2>
+                     <a class="btn_view" href="dashboard-vendor-profile.html"> View All Vendors  <span class="pl-2 "><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                     
+                  </div>
+               </div>
+            </div>
+             <div class="row">
+               
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Herbs &amp; Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Herbs &amp; Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                     <a class="vender_item" href="dashboard-vendor-profile.html">
+                         <div class="vendor-wrap d-flex align-items-center">
+                             <div class="image">
+                                 <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                             </div>
+                             <div class="vendor-content ml-3">
+                                 <label for="name" class="m-0 font-weight-bold">Herbs &amp; Meds Co.</label>
+                                 <div class="category">
+                                     Category: Medical Supply
+                                 </div>
+                                 <ul class="d-flex">
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                     <li class="mr-1">
+                                         <i class="fa fa-star"></i>
+                                     </li>
+                                 </ul>
+
+                             </div>
+
+                         </div>
+                     </a>
+                 </div>
+                 <!-- <div class="col-12 text-center mt-4">
+                     <button type="button" class="btn-custom mx-auto">View More</button>
+                 </div> -->
+             </div>
+
+         </div>
+     </section>
+      <!--============================================= VENDER END ======-->
       <!--=============================FOOTER START  ============================ -->
       <footer
          id="footer"

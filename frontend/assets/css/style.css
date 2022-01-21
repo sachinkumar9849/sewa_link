@@ -189,7 +189,9 @@ a.btn_view {
 .border_one {
     border-top: 0.1px solid #dee2e6;
 }
-
+select {
+  cursor: pointer;
+}
 /*=================================================== CUSTOME END  */
 /*=================================================== TABLE CSS START  */
 th.th_size {
@@ -301,6 +303,32 @@ ul.my_account a:hover {
 }
 header.section-header .top_head_right a.trak_order {
     font-size: 13px;
+}
+header.section-header .track_input_btn input{
+  font-size: 13px;
+  border-radius: 0;
+}
+header.section-header .track_input_btn input[type="text"]::placeholder{
+  color: #000;
+  font-size: 14px;
+
+}
+header.section-header .input_track_blo {
+  width: 223px;
+  border-radius: 0 !important;
+}
+header.section-header ul.my_account li {
+  padding-bottom: 5px;
+}
+header.section-header ul.my_account li a{
+  transition: .3s;
+  font-size: 15px;
+}
+header.section-header ul.my_account li a:hover{
+ color: var(--theme_color_sub);
+}
+header.section-header ul.my_account li:nth-child(2) {
+  padding-bottom: 2px;
 }
 /*============ TOP HEADER END ===*/
 a.search_icon.text-dark i.fa {
@@ -910,14 +938,14 @@ section#two_banner .banner_img_block img {
     width: 100%;
 }
   /* the slides */
-  .slick-slide {
+  /* .slick-slide {
     margin-left:27px;
   }
 
-  /* the parent */
+  
   .slick-list {
     margin-left:-27px;
-  }
+  } */
 /*=================================================== TOW BANNER END  */
 
 /*=================================================== BEST SELLING START  */
@@ -936,6 +964,7 @@ span.savings-text {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 17px;
+    color: white;
 
 }
 
@@ -1029,10 +1058,27 @@ div#countdown li {
 
 /*=================================================== BEST SELLING END  */
 /*=================================================== TWO BANNER START  */
+
+
+section#banner_two .two_banner_img  {
+  overflow: hidden;
+  position: relative;
+ 
+}
 section#banner_two .two_banner_img img {
-    min-height: 200px;
-    max-height: 200px;
-    object-fit: cover;
+  transform: scale(1);
+  transition: .5s;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+ 
+}
+section#banner_two .two_banner_img img:hover {
+  transform: scale(1.2);
+  min-height: 200px;
+  max-height: 200px;
+  /* transition: .5s; */
 }
 /*=================================================== TWO BANNER END  */
 
@@ -2325,6 +2371,76 @@ input#defaultUnchecked {
     padding: 0;
 }
   /*=================================================== ORDER SUCCESS END  */
+
+  /*=================================================== THREE BANNER CSS START  */
+  section#three_banner .three_banner_img img {
+    min-height: 172px;
+    max-height: 172px;
+    width: 100%;
+    
+}
+
+  /*=================================================== THREE BANNER CSS END  */
+
+  /*=================================================== VENDER HOME PAGE SLIDER START  */
+ /* Vendor Listing */
+        
+ #vendor-listing-wrapper {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#vendor-listing-wrapper .vender_item {
+  text-decoration: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 7px;
+  display: inline-block;
+  transition: 1s;
+  width: 100%;
+  cursor: pointer;
+}
+
+#vendor-listing-wrapper .vender_item:hover {
+  box-shadow: rgb(125 125 125 / 45%) 0px 25px 20px -20px;
+  border: 1px solid transparent;
+  transition: 1s;
+}
+
+#vendor-listing-wrapper .image img {
+  max-height: 120px;
+  min-height: 120px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  transition: 3s ease-in;
+}
+
+#vendor-listing-wrapper .image {
+  overflow: hidden;
+  width: 40%;
+  border-radius: 5px;
+}
+
+#vendor-listing-wrapper .image:hover img {
+  transform: scale(1.1);
+  transition: transform 3s ease-out;
+}
+
+#vendor-listing-wrapper .vendor-content ul li i {
+  color: orange;
+}
+
+#vendor-listing-wrapper .vendor-content .category {
+  font-size: 15px;
+}
+
+#vendor-listing-wrapper label {
+  font-size: 19px;
+  color: var(--main-color);
+}
+/* Vendor Listing Ends */
+
+  /*=================================================== VENDER HOME PAGE SLIDER END  */
 
   
 
