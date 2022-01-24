@@ -48,7 +48,7 @@
    </head>
    <body>
       <!-- <div id="loading"></div> -->
-      <header class="section-header top-header-bg">
+      <header class="section-header top-header-bg d-md-block d-none">
          <div class="container px-0">
             <div class="top-header d-flex justify-content-end align-items-center">
                <div class="top-social-icon">
@@ -65,9 +65,12 @@
                            <span class="caret"></span>
                            </button>
                            <ul class="my_account dropdown-menu pl-3 ">
-                              <div class="input_track_blo d-flex">
-                                 <input type="text" placeholder="Track Your Order"/>
+                              <div class="input_track_blo d-flex flex-column pb-2">
+                                 <label><small class="font-weight-bold">Track Your Order</small></label>
+                                 <div class="track_input_btn d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter order id"/>
                               <button class="btn_custom_go">Go</button>
+                                 </div>
                               </div>
                            </ul>
                         </div>
@@ -197,14 +200,49 @@
             </div>
          </div>
       </header>
-      <div class="nav_bar">
-         <div class="container">
+      <div class="nav_bar header-sticky">
+         <div class="container pl-0 ">
             <div class="row">
                <div class="col-md-2">
                   <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
                </div>
+               <!-- search start  -->
+
+          <div class="searchbar d-none d-md-block">
+            <input
+              class="search_input"
+              type="text"
+              name=""
+              placeholder="Search..."
+            />
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+
+          
+          <!-- search mobile new star  -->
+          <div class="search_mobile_men  d-block d-md-none">
+            <button class="search_icon_new" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+
+            <div class="sub_search">
+              <form action="" class="d-flex">
+                <input
+                  class="input_box"
+                  type="text"
+                  placeholder="Search.."
+                  name="search"
+                />
+                <button class="search_top" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- search mobile new end  -->
+
                <div class="col-md-8">
-                  <div class="search_men">
+                  <div class="search_men d-none d-md-block">
                      <form class="form-inline search_top">
                         <input
                            class="form-control border-0 search_input"
@@ -253,16 +291,9 @@
                </div>
                <div class="col-md-2">
                   <ul
-                     class="cart_top_list d-flex justify-content-between mb-0 h-100 align-items-center"
+                     class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
                      >
-                     <!-- <li>
-                        <a href="" class="position-relative"
-                          ><img
-                            src="./frontend/assets/images/logo/user.svg"
-                            class="img-fluid"
-                            alt=""
-                        /></a>
-                        </li> -->
+                    
                      <li>
                         <a href="" class="position-relative">
                        <sub class='sub_block'>1</sub>
@@ -357,6 +388,17 @@
                </div>
             </div>
          </div>
+         <!-- Button trigger modal -->
+      <div
+      class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+      data-toggle="modal"
+      data-target="#rightsidebarfilter"
+    >
+      <span
+        ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+      ></span>
+    </div>
+    <!-- Button trigger modal -->
       </div>
       <!--======================================================= HEADER END ======-->
    
@@ -366,7 +408,7 @@
    <div class="container">
        <div class="row">
           
-           <div class="offset-1 col text-center">
+           <div class="offset-md-1 offset-0 col-md-2 col-4  text-center ">
                <div class="img_order_list ">
                   <div class="img_block_icon">
                    <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
@@ -376,7 +418,7 @@
                   </div>
                </div>
            </div>
-           <div class="col text-center">
+           <div class="col-md-2 col-4  text-center">
                <div class="img_order_list">
                   <div class="img_block_icon">
                    <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
@@ -386,7 +428,7 @@
                   </div>
                </div>
            </div>
-           <div class="col text-center">
+           <div class="col-md-2 col-4  text-center">
                <div class="img_order_list">
                   <div class="img_block_icon">
                    <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
@@ -396,7 +438,7 @@
                   </div>
                </div>
            </div>
-           <div class="col text-center">
+           <div class="col-md-2 col-4  text-center">
                <div class="img_order_list">
                   <div class="img_block_icon">
                    <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
@@ -406,13 +448,13 @@
                   </div>
                </div>
            </div>
-           <div class="col text-center  mr-5 pr-5">
+           <div class="col-md-2 col-4  text-center  mr-xl-5 mr-0 pr-xl-5 pr-0">
                <div class="img_order_list">
                   <div class="img_block_icon">
                    <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
                   </div>
                   <div class="content_img">
-                   <h6 class=""> 5. Confirmation</h6>
+                   <h6 class=""> 5.Confirmation</h6>
                   </div>
                </div>
            </div>
@@ -426,7 +468,7 @@
 <section id="cart_user" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 bg-white p-3">
+            <div class="col-xl-8 col-md-12 bg-white p-3">
                 <div class="table-responsive-lg">
                     <table class="table">
                        <thead>
@@ -447,14 +489,18 @@
                                 </a>
                              </td>
                              <td class="">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                In publishing and graphic design.
                              </td>
                              <td class="">
                                 <div class="input_b">
-                                   <b onclick="{inc}" class="minus_b">-</b>
-                                   <input type="number" class="count_b" name="qty" value="1" disabled="">
-                                   <b class="plus_b">+</b>
+                                   <b onclick="decreaseValue()" value="Decrease Value" class="minus_b">-</b>
+                                   <input  type="number" id="numbers" value="0" class="count_b disabled="" name="qty">
+                                   <b class="plus_b " onclick="increaseValue()" value="Increase Value">+</b>
                                 </div>
+
+
+                              
+                               
                              </td>
                              <td class="">
                                 <span class="cart-grand-total-price">$300.00</span>
@@ -469,14 +515,14 @@
                                 </a>
                              </td>
                              <td class="">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                In publishing and graphic design.
                              </td>
                              <td class="">
-                                <div class="input_b">
-                                    <b onclick="{inc}" class="minus_b">-</b>
-                                    <input type="number" class="count_b" name="qty" value="1" disabled="">
-                                    <b class="plus_b">+</b>
-                                 </div>
+                               <div class="input_b">
+                                   <b onclick="decreaseValue()" value="Decrease Value" class="minus_b">-</b>
+                                   <input  type="number" id="numbers" value="0" class="count_b disabled="" name="qty">
+                                   <b class="plus_b " onclick="increaseValue()" value="Increase Value">+</b>
+                                </div>
                              </td>
                              <td class="">
                                 <span class="cart-grand-total-price">$300.00</span>
@@ -491,14 +537,14 @@
                                 </a>
                              </td>
                              <td class="">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                In publishing and graphic design.
                              </td>
                              <td class="">
-                                <div class="input_b">
-                                    <b onclick="{inc}" class="minus_b">-</b>
-                                    <input type="number" class="count_b" name="qty" value="1" disabled="">
-                                    <b class="plus_b">+</b>
-                                 </div>
+                               <div class="input_b">
+                                   <b onclick="decreaseValue()" value="Decrease Value" class="minus_b">-</b>
+                                   <input  type="number" id="numbers" value="0" class="count_b disabled="" name="qty">
+                                   <b class="plus_b " onclick="increaseValue()" value="Increase Value">+</b>
+                                </div>
                              </td>
                              <td class="">
                                 <span class="cart-grand-total-price">$300.00</span>
@@ -519,8 +565,8 @@
                  </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 bg-white text-left">
+            <div class="col-xl-4 col-md-7 m-auto m-xl-0 ">
+                <div class="cart-summary sub_border_shadow mt-4 mt-xl-0  p-xl-4 p-lg-4 p-md-3 p-3 bg-white text-left">
                   <div class="cart_user_top">
                       <div class="cart_summary d-flex justify-content-between">
                         <strong class="cart_text mb-3 d-block font-weight-bold">Summary</strong>

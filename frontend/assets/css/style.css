@@ -16,7 +16,14 @@ textarea,
     box-shadow: none;
 }
 
-
+section#cart_user span.imgCheckbox0 .img_select {
+ 
+  min-height: 140px;
+  max-height: 140px;
+}
+i.fa.fa-shopping-bag ,i.fa.fa-heart-o {
+  color: var(--theme_color_sub);
+}
 /* DEFAULT CSS END  */
 
 input:hover,
@@ -227,8 +234,66 @@ i.fa.fa-trash-o{
 i.fa.fa-trash-o:hover{
   color: red;
 }
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+
+
+section#cart_user input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+section#cart_user input#numbers {
+  background: #fafafa !important;
+}
+section#cart_user input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 /*=================================================== TABLE CSS END  */
 /*=================================================== BUTTON CSS START  */
+.btn-custom {
+  padding: 8px 27px;
+  background: var(--theme_color_sub) !important;
+ 
+}
 section#cart_user .btn_custom {
   padding: 10px 27px;
   background: var(--theme_color_sub);
@@ -334,6 +399,28 @@ header.section-header ul.my_account li:nth-child(2) {
   padding-bottom: 2px;
 }
 /*============ TOP HEADER END ===*/
+
+.header-sticky.sticky-bar {
+  background: #fff;
+}
+.sticky-bar {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  z-index: 9999;
+  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  background: #fff;
+}
+
+.searchbar.d-none.d-md-block {
+  display: none !important;
+}
 a.search_icon.text-dark i.fa {
     color: var(--white);
 }
@@ -341,7 +428,7 @@ a.search_icon.text-dark i.fa {
     /* padding: 15px 0; */
 }
 a.navbar-brand img {
-  height: 71px;
+  height: 65px;
 }
 .search_select_content option {
     font-size: 14px;
@@ -355,7 +442,7 @@ a.navbar-brand img {
     overflow: hidden;
     height: 43px;
     line-height: 42px;
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 .search_select_content {
@@ -505,14 +592,14 @@ b.plus {
 
 button.slick-prev.slick-arrow {
     position: absolute;
-    left: -2% !important;
+    left: -4% !important;
     z-index: 9;
     top: 44%;
 }
 
 button.slick-next.slick-arrow {
     position: absolute;
-    right: 1%;
+    right: -1%;
     top: 44%;
 }
 
@@ -1881,7 +1968,7 @@ section#order_list_top .img_order_list h6 {
     margin-bottom: 0;
 }
 h6.active-item {
-  color: #258aff !important;
+  color: var(--theme_color_sub) !important;
 }
 /* cart content start  */
 section#cart_user {
@@ -1950,6 +2037,7 @@ section#cart_user .button_block {
 b.minus_b {
   width: 20px;
   text-align: center;
+  cursor: pointer;
   /* display: inline-block; */
 }
 input.count_b {
@@ -1960,6 +2048,7 @@ input.count_b {
 b.plus_b {
   width: 20px;
   text-align: center;
+  cursor: pointer;
 }
 section#cart_user .cart-price {
   font-size: 14px;
@@ -1969,7 +2058,9 @@ section#cart_user .cart-price h6 {
   font-weight: 600;
 }
 section#cart_user .item_block {
-  background: var(--theme_color);
+  background: var(--theme_color_sub);
+  
+  color: var(--white);
   /* padding: 0; */
   height: 25px;
   line-height: 25px;
@@ -1986,8 +2077,9 @@ section#cart_user .cart_summary {
   font-size: 19px;
 }
 button.btn.btn-base-1 {
-  background: var(--theme_color);
+  background: var(--theme_color_sub);
   border-radius: 0;
+  color: var(--white);
 }
 /*=============================== CART PAGE END =======================*/
 
@@ -2003,6 +2095,19 @@ button.btn.btn-base-1 {
   --radio-border-width: 2px;
   --radio-size: 1.5em;
   }
+  div#shipping .add_btn_img img {
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#shipping button.btn.add_btn_img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
   div#shipping input.radio {
       width: 36px;
       text-align: center;

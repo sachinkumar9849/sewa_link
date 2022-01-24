@@ -48,7 +48,7 @@
    </head>
    <body>
       <!-- <div id="loading"></div> -->
-      <header class="section-header top-header-bg">
+      <header class="section-header top-header-bg d-md-block d-none">
          <div class="container px-0">
             <div class="top-header d-flex justify-content-end align-items-center">
                <div class="top-social-icon">
@@ -65,9 +65,12 @@
                            <span class="caret"></span>
                            </button>
                            <ul class="my_account dropdown-menu pl-3 ">
-                              <div class="input_track_blo d-flex">
-                                 <input type="text" placeholder="Track Your Order"/>
+                              <div class="input_track_blo d-flex flex-column pb-2">
+                                 <label><small class="font-weight-bold">Track Your Order</small></label>
+                                 <div class="track_input_btn d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter order id"/>
                               <button class="btn_custom_go">Go</button>
+                                 </div>
                               </div>
                            </ul>
                         </div>
@@ -197,14 +200,49 @@
             </div>
          </div>
       </header>
-      <div class="nav_bar">
-         <div class="container">
+      <div class="nav_bar header-sticky">
+         <div class="container pl-0 ">
             <div class="row">
                <div class="col-md-2">
                   <a class="navbar-brand text-dark font-weight-bold" href="#"><img src="./frontend/assets/images/logo.jpg" alt="" class="img-fluid"></a>
                </div>
+               <!-- search start  -->
+
+          <div class="searchbar d-none d-md-block">
+            <input
+              class="search_input"
+              type="text"
+              name=""
+              placeholder="Search..."
+            />
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+
+          
+          <!-- search mobile new star  -->
+          <div class="search_mobile_men  d-block d-md-none">
+            <button class="search_icon_new" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+
+            <div class="sub_search">
+              <form action="" class="d-flex">
+                <input
+                  class="input_box"
+                  type="text"
+                  placeholder="Search.."
+                  name="search"
+                />
+                <button class="search_top" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- search mobile new end  -->
+
                <div class="col-md-8">
-                  <div class="search_men">
+                  <div class="search_men d-none d-md-block">
                      <form class="form-inline search_top">
                         <input
                            class="form-control border-0 search_input"
@@ -253,16 +291,9 @@
                </div>
                <div class="col-md-2">
                   <ul
-                     class="cart_top_list d-flex justify-content-between mb-0 h-100 align-items-center"
+                     class="cart_top_list d-flex justify-content-around mb-0 h-100 align-items-center "
                      >
-                     <!-- <li>
-                        <a href="" class="position-relative"
-                          ><img
-                            src="./frontend/assets/images/logo/user.svg"
-                            class="img-fluid"
-                            alt=""
-                        /></a>
-                        </li> -->
+                    
                      <li>
                         <a href="" class="position-relative">
                        <sub class='sub_block'>1</sub>
@@ -357,63 +388,75 @@
                </div>
             </div>
          </div>
+         <!-- Button trigger modal -->
+      <div
+      class="mobile-menu d-lg-none d-md-block mr-4 position-absolute"
+      data-toggle="modal"
+      data-target="#rightsidebarfilter"
+    >
+      <span
+        ><i class="fa fa-bars fa-2x text-light" aria-hidden="true"></i
+      ></span>
+    </div>
+    <!-- Button trigger modal -->
       </div>
       <!--======================================================= HEADER END ======-->
       <!--======================================================= ORDER TOP LIST START ==-->
       <section id="order_list_top">
          <div class="container">
-            <div class="row">
-               <div class="offset-1 col text-center">
-                  <div class="img_order_list ">
-                     <div class="img_block_icon">
-                        <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+             <div class="row">
+                
+                 <div class="offset-md-1 offset-0 col-md-2 col-4  text-center ">
+                     <div class="img_order_list ">
+                        <div class="img_block_icon">
+                         <img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content_img ">
+                         <h6 class="active-item"> 1.My Cart</h6>
+                        </div>
                      </div>
-                     <div class="content_img ">
-                        <h6 class=""> 1.My Cart</h6>
+                 </div>
+                 <div class="col-md-2 col-4  text-center">
+                     <div class="img_order_list">
+                        <div class="img_block_icon">
+                         <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content_img">
+                         <h6 class=""> 2.Shipping Info</h6>
+                        </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col text-center">
-                  <div class="img_order_list">
-                     <div class="img_block_icon">
-                        <img src="./frontend/assets/images/map.svg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-md-2 col-4  text-center">
+                     <div class="img_order_list">
+                        <div class="img_block_icon">
+                         <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content_img">
+                         <h6 class=""> 3 Delivery Info</h6>
+                        </div>
                      </div>
-                     <div class="content_img">
-                        <h6 class="active-item"> 2.Shipping Info</h6>
+                 </div>
+                 <div class="col-md-2 col-4  text-center">
+                     <div class="img_order_list">
+                        <div class="img_block_icon">
+                         <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content_img">
+                         <h6 class=""> 4. Payment</h6>
+                        </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col text-center">
-                  <div class="img_order_list">
-                     <div class="img_block_icon">
-                        <img src="./frontend/assets/images/delivery_new.svg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-md-2 col-4  text-center  mr-xl-5 mr-0 pr-xl-5 pr-0">
+                     <div class="img_order_list">
+                        <div class="img_block_icon">
+                         <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content_img">
+                         <h6 class=""> 5.Confirmation</h6>
+                        </div>
                      </div>
-                     <div class="content_img">
-                        <h6 class=""> 3 Delivery Info</h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col text-center">
-                  <div class="img_order_list">
-                     <div class="img_block_icon">
-                        <img src="./frontend/assets/images/payment.svg" class="img-fluid" alt="">
-                     </div>
-                     <div class="content_img">
-                        <h6 class=""> 4. Payment</h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col text-center  mr-5 pr-5">
-                  <div class="img_order_list">
-                     <div class="img_block_icon">
-                        <img src="./frontend/assets/images/confirmation.svg" class="img-fluid" alt="">
-                     </div>
-                     <div class="content_img">
-                        <h6 class=""> 5. Confirmation</h6>
-                     </div>
-                  </div>
-               </div>
-            </div>
+                 </div>
+             </div>
          </div>
       </section>
       <!--======================================================= ORDER TOP LIST END ======-->
@@ -421,7 +464,7 @@
       <section id="cart_user" class="py-5">
          <div class="container">
             <div class="row">
-               <div class="col-md-8 ">
+               <div class="col-xl-8 col-md-12">
                   <div class="row" id="shipping">
                      <div class="col-md-6">
                         <label class="active card bg-white p-3 ">
@@ -459,39 +502,20 @@
                         </span>
                         </label>
                      </div>
+
+
+
+
+                    <div class="col-md-6">
+                     <button type="button" class="btn add_btn_img" data-toggle="modal" data-target="#spipping_add">
+                        <img src="https://image.flaticon.com/icons/png/512/1104/1104261.png" alt="" class="img-fluid"> 
+                      </button>
+                    </div>
                   </div>
-                  <div class="row mx-1">
-                     <div class="col-md-12">
-                        <form>
-                           <div class="row bg-white pb-4 mt-3">
-                              <div class="col-md-6">
-                                 <label for="" class="text_gray mt-3">Address</label>
-                                 <input type="text" class="form-control w-100" placeholder="Address">
-                              </div>
-                              <div class="col-md-6">
-                                 <label for="" class="text_gray mt-3">Country</label>
-                                 <input type="text" class="form-control w-100" placeholder="Country">
-                              </div>
-                              <div class="col-md-6">
-                                 <label for="" class="text_gray mt-3">City</label>
-                                 <input type="text" class="form-control w-100" placeholder="Your City">
-                              </div>
-                              <div class="col-md-6">
-                                 <label for="" class="text_gray mt-3">Postal code</label>
-                                 <input type="text" class="form-control w-100" placeholder="Your Postal Code">
-                              </div>
-                              <div class="col-md-6">
-                                 <label for="" class="text_gray mt-3">Phone</label>
-                                 <input type="text" class="form-control w-100" placeholder="+880">
-                              </div>
-                              <div class="col-md-6">
-                                 <button class="btn-custom rounded-0 mt-5">Save</button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                     <div class="col-md-12 px-0">
-                        <div class="button_block d-flex justify-content-between align-items-center">
+
+                  <div class="row">
+                     <div class="col-md-12 mb-3 mb-md-">
+                        <div class="button_block d-flex justify-content-between align-items-center mb-4 mb-md-0">
                            <a href=""> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
                            <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
                            <a href="delivery_info.html"> <button class="btn_custom">Continue to Delivery Info
@@ -499,8 +523,10 @@
                         </div>
                      </div>
                   </div>
+                  
+                 
                </div>
-               <div class="col-md-4">
+               <div class="col-xl-4 col-md-7 m-auto m-xl-0">
                   <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 bg-white text-left">
                      <div class="cart_user_top">
                         <div class="cart_summary d-flex justify-content-between">
@@ -2328,5 +2354,56 @@
          </div>
       </div>
       <!-- Mobile Profile Nav Pop Up Ends -->
+
+      <!-- SHIPPING ADDRESS ADD MODAL START -->
+ <!-- Modal -->
+ <div class="modal fade" id="spipping_add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Add Address</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body p-0">
+         <div class="row mx-1">
+            <div class="col-md-12">
+               <form>
+                  <div class="row bg-white pb-4">
+                     <div class="col-md-6">
+                        <label for="" class="text_gray mt-3">Address</label>
+                        <input type="text" class="form-control w-100" placeholder="Address">
+                     </div>
+                     <div class="col-md-6">
+                        <label for="" class="text_gray mt-3">Country</label>
+                        <input type="text" class="form-control w-100" placeholder="Country">
+                     </div>
+                     <div class="col-md-6">
+                        <label for="" class="text_gray mt-3">City</label>
+                        <input type="text" class="form-control w-100" placeholder="Your City">
+                     </div>
+                     <div class="col-md-6">
+                        <label for="" class="text_gray mt-3">Postal code</label>
+                        <input type="text" class="form-control w-100" placeholder="Your Postal Code">
+                     </div>
+                     <div class="col-md-6">
+                        <label for="" class="text_gray mt-3">Phone</label>
+                        <input type="text" class="form-control w-100" placeholder="+880">
+                     </div>
+                     <div class="col-md-6">
+                        <button class="btn-custom rounded-0 mt-md-5 mt-3">Save</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+           
+         </div>
+       </div>
+       
+     </div>
+   </div>
+ </div>
+      <!-- SHIPPING ADDRESS ADD MODAL END -->
    </body>
 </html>
