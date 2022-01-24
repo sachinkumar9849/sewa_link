@@ -173,8 +173,8 @@ body {
     font-size: 22px;
     padding-bottom: 9px;
 }
-.padding{
-    padding: 70px;
+.padding_defauld{
+    padding: 70px 0;
 }
 .padding_top{
     padding-top: 70px;
@@ -722,9 +722,9 @@ section#category_section .text_cate h3 {
     text-align: center;
     color: #4d4a4a;
 }
-section#category_section {
+/* section#category_section {
     margin-bottom: 75px;
-}
+} */
 section#category_section .grid-container {
     background: white;
     padding: 20px 0 5px 0;
@@ -762,6 +762,32 @@ section#category_section .grid-container {
 }
 /*============================================= CATEGORY END  */
 /*=================================================== FEATURED PRODUCT START  */
+.product_listing .product-grid-item .product-grid-image img {
+  width: 100%;
+  max-height: 190px;
+  min-height: 190px;
+  object-fit: contain;
+  object-position: center;
+}
+.product-grid-item .category-title .title a {
+  color: var(--theme_color_sub) !important;
+}
+.product-grid-item .product-discount-label {
+  
+  background-color: var(--theme_color_sub) !important;
+
+}
+.product-grid-item .category-title .category a{
+  color: rgb(163, 163, 163) !important;
+  font-size: 12px;
+}
+.product-grid-item:hover .price-cart .all-deals {
+  background-color: var(--theme_color_sub) !important;
+ 
+}
+.product-grid-item .cart-compare a:hover {
+  color: var(--theme_color_sub) !important;
+}
 section#productlist .top_head_right a {
     font-size: 13px;
     font-weight: 500;
@@ -2386,10 +2412,33 @@ input#defaultUnchecked {
   /*=================================================== THREE BANNER CSS END  */
 
   /*=================================================== VENDER HOME PAGE SLIDER START  */
- /* Vendor Listing */
-        
+
+
+#vendor-listing-wrapper .btn_view {
+  text-decoration: none;
+  border: unset;
+  border-radius: unset;
+  padding: unset;
+  display: unset;
+  transition: unset;
+  width: unset;
+  /* cursor: unset; */
+  font-family: 'Open Sans';
+}
+#vendor-listing-wrapper .btn_view:hover {
+  box-shadow: unset;
+  border: unset;
+  transition: unset;
+}
+.section_title_block h2 {
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 9px;
+  font-family: 'Open Sans';
+}
+
  #vendor-listing-wrapper {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 #vendor-listing-wrapper .vender_item {
@@ -2439,10 +2488,12 @@ input#defaultUnchecked {
 
 #vendor-listing-wrapper label {
   font-size: 19px;
-  color: var(--main-color);
+  color: var(--theme_color);
 }
 /* Vendor Listing Ends */
-
+.vender_home .vendor-content {
+  font-family: 'Open Sans';
+}
   /*=================================================== VENDER HOME PAGE SLIDER END  */
 
   

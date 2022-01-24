@@ -10,6 +10,20 @@
     
 }
 @media (max-width: 767px) {
+
+  /*=========================== COMMON CSS START  */
+  .padding_defauld{
+    padding: 0px 0;
+}
+.grid-item {
+  /* box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px; */
+  /* box-shadow: rgb(0 0 0 / 15%) 0px 20px 34px -20px; */
+}
+.slick-dotted.slick-slider {
+
+  margin-bottom: 0;
+}
+  /*=========================== COMMON CSS END  */
    
 
 /* Mobile Menu */
